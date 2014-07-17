@@ -12,6 +12,8 @@ public class RAM_File {
 		
 		ram1.seek(4);
 		ram1.write(0);
+		ram1.skipBytes(2);
+		ram1.write(0);
 		ram1.seek(0);
 		
 		for (i=0;i<=10;i++)
